@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101850952B9F250D00F350DB /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 101850942B9F250D00F350DB /* KeychainSwift */; };
+		1030425E2BA99ED600916F52 /* AddWorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1030425D2BA99ED600916F52 /* AddWorkspaceView.swift */; };
+		103042602BA9BD9900916F52 /* EditWorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1030425F2BA9BD9900916F52 /* EditWorkspaceView.swift */; };
+		1036AE9B2BA069D900EF6779 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1036AE9A2BA069D900EF6779 /* URLSessionMock.swift */; };
+		1036AE9D2BA069F000EF6779 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1036AE9C2BA069F000EF6779 /* URLSessionDataTaskMock.swift */; };
+		1036AE9F2BA06B2D00EF6779 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1036AE9E2BA06B2D00EF6779 /* URLSessionDataTaskProtocol.swift */; };
+		1036AEA12BA06B6E00EF6779 /* URLSessionDataTask+Conformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1036AEA02BA06B6E00EF6779 /* URLSessionDataTask+Conformance.swift */; };
+		1036D6092BB17A050019FB5B /* AddBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1036D6082BB17A050019FB5B /* AddBoardView.swift */; };
+		1036D60B2BB17A220019FB5B /* EditBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1036D60A2BB17A220019FB5B /* EditBoardView.swift */; };
+		1036D6142BB1A1F90019FB5B /* EditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1036D6132BB1A1F90019FB5B /* EditCardView.swift */; };
+		1036D6162BB1AB8A0019FB5B /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1036D6152BB1AB8A0019FB5B /* AddCardView.swift */; };
+		1052677E2BA9FAB100FAB64B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052677D2BA9FAB100FAB64B /* LoginView.swift */; };
+		10ACAB982BB1D299003B4793 /* BoardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ACAB972BB1D299003B4793 /* BoardDetailView.swift */; };
+		10ACAB9E2BB2169E003B4793 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ACAB9D2BB2169E003B4793 /* AddListView.swift */; };
+		10ACABA02BB2EF1F003B4793 /* InviteMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ACAB9F2BB2EF1F003B4793 /* InviteMemberView.swift */; };
+		10ACABA22BB2F6D6003B4793 /* MemberSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ACABA12BB2F6D6003B4793 /* MemberSelectionView.swift */; };
+		10ACABA42BB2F74D003B4793 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ACABA32BB2F74D003B4793 /* Member.swift */; };
+		10C917492B95CC9F0071EE56 /* TrellTechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C917482B95CC9F0071EE56 /* TrellTechApp.swift */; };
+		10C9174B2B95CC9F0071EE56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9174A2B95CC9F0071EE56 /* ContentView.swift */; };
+		10C9174D2B95CCA00071EE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C9174C2B95CCA00071EE56 /* Assets.xcassets */; };
+		10C917512B95CCA00071EE56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C917502B95CCA00071EE56 /* Preview Assets.xcassets */; };
+		10C9175B2B95CCA00071EE56 /* TrellTechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9175A2B95CCA00071EE56 /* TrellTechTests.swift */; };
+		10C917652B95CCA00071EE56 /* TrellTechUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C917642B95CCA00071EE56 /* TrellTechUITests.swift */; };
+		10C917672B95CCA00071EE56 /* TrellTechUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C917662B95CCA00071EE56 /* TrellTechUITestsLaunchTests.swift */; };
+		10C917742B95CD230071EE56 /* TrelloAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C917732B95CD230071EE56 /* TrelloAuthenticator.swift */; };
+		10C917782B95D05C0071EE56 /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 10C917772B95D05C0071EE56 /* OAuthSwift */; };
+		10C9178A2B9612640071EE56 /* SuccesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C917892B9612640071EE56 /* SuccesView.swift */; };
+		10C917942B9625F10071EE56 /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C917932B9625F10071EE56 /* Workspace.swift */; };
+		10C917962B9626820071EE56 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C917952B9626820071EE56 /* Board.swift */; };
+		10C917982B9626A10071EE56 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C917972B9626A10071EE56 /* BoardView.swift */; };
+		10C9179A2B962B0A0071EE56 /* WorkspacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C917992B962B0A0071EE56 /* WorkspacesView.swift */; };
+		10C9179C2B962CD20071EE56 /* TrelloAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9179B2B962CD20071EE56 /* TrelloAPIManager.swift */; };
+		10C9179E2B973D890071EE56 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9179D2B973D890071EE56 /* List.swift */; };
+		10C917A02B973D9D0071EE56 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9179F2B973D9D0071EE56 /* Card.swift */; };
+		430B4B852BA89F5300F8F816 /* ProjectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B4B842BA89F5300F8F816 /* ProjectItemView.swift */; };
+		430B4B872BA89F6600F8F816 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B4B862BA89F6600F8F816 /* CircularImageView.swift */; };
+		430B4B892BA89F8500F8F816 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B4B882BA89F8500F8F816 /* SearchBarView.swift */; };
+		430B4B8E2BA8A05300F8F816 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B4B8D2BA8A05300F8F816 /* Data.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10C917572B95CCA00071EE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10C9173D2B95CC9F0071EE56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10C917442B95CC9F0071EE56;
+			remoteInfo = TrellTech;
+		};
+		10C917612B95CCA00071EE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10C9173D2B95CC9F0071EE56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10C917442B95CC9F0071EE56;
+			remoteInfo = TrellTech;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1030425D2BA99ED600916F52 /* AddWorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkspaceView.swift; sourceTree = "<group>"; };
+		1030425F2BA9BD9900916F52 /* EditWorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWorkspaceView.swift; sourceTree = "<group>"; };
+		1036AE9A2BA069D900EF6779 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		1036AE9C2BA069F000EF6779 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
+		1036AE9E2BA06B2D00EF6779 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		1036AEA02BA06B6E00EF6779 /* URLSessionDataTask+Conformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTask+Conformance.swift"; sourceTree = "<group>"; };
+		1036D6082BB17A050019FB5B /* AddBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoardView.swift; sourceTree = "<group>"; };
+		1036D60A2BB17A220019FB5B /* EditBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBoardView.swift; sourceTree = "<group>"; };
+		1036D6132BB1A1F90019FB5B /* EditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardView.swift; sourceTree = "<group>"; };
+		1036D6152BB1AB8A0019FB5B /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		1052677D2BA9FAB100FAB64B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		10ACAB972BB1D299003B4793 /* BoardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailView.swift; sourceTree = "<group>"; };
+		10ACAB9D2BB2169E003B4793 /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
+		10ACAB9F2BB2EF1F003B4793 /* InviteMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteMemberView.swift; sourceTree = "<group>"; };
+		10ACABA12BB2F6D6003B4793 /* MemberSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberSelectionView.swift; sourceTree = "<group>"; };
+		10ACABA32BB2F74D003B4793 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		10C917452B95CC9F0071EE56 /* TrellTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrellTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C917482B95CC9F0071EE56 /* TrellTechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrellTechApp.swift; sourceTree = "<group>"; };
+		10C9174A2B95CC9F0071EE56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10C9174C2B95CCA00071EE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10C9174E2B95CCA00071EE56 /* TrellTech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrellTech.entitlements; sourceTree = "<group>"; };
+		10C917502B95CCA00071EE56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10C917562B95CCA00071EE56 /* TrellTechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrellTechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C9175A2B95CCA00071EE56 /* TrellTechTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrellTechTests.swift; sourceTree = "<group>"; };
+		10C917602B95CCA00071EE56 /* TrellTechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrellTechUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C917642B95CCA00071EE56 /* TrellTechUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrellTechUITests.swift; sourceTree = "<group>"; };
+		10C917662B95CCA00071EE56 /* TrellTechUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrellTechUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10C917732B95CD230071EE56 /* TrelloAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrelloAuthenticator.swift; sourceTree = "<group>"; };
+		10C917752B95CEAA0071EE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		10C917892B9612640071EE56 /* SuccesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesView.swift; sourceTree = "<group>"; };
+		10C917932B9625F10071EE56 /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
+		10C917952B9626820071EE56 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		10C917972B9626A10071EE56 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		10C917992B962B0A0071EE56 /* WorkspacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspacesView.swift; sourceTree = "<group>"; };
+		10C9179B2B962CD20071EE56 /* TrelloAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrelloAPIManager.swift; sourceTree = "<group>"; };
+		10C9179D2B973D890071EE56 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		10C9179F2B973D9D0071EE56 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		430B4B842BA89F5300F8F816 /* ProjectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemView.swift; sourceTree = "<group>"; };
+		430B4B862BA89F6600F8F816 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		430B4B882BA89F8500F8F816 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		430B4B8D2BA8A05300F8F816 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		434409162BA895AB00F672B9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10C917422B95CC9F0071EE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101850952B9F250D00F350DB /* KeychainSwift in Frameworks */,
+				10C917782B95D05C0071EE56 /* OAuthSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C917532B95CCA00071EE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C9175D2B95CCA00071EE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1036AE992BA069A900EF6779 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				1036AE9A2BA069D900EF6779 /* URLSessionMock.swift */,
+				1036AE9C2BA069F000EF6779 /* URLSessionDataTaskMock.swift */,
+				1036AE9E2BA06B2D00EF6779 /* URLSessionDataTaskProtocol.swift */,
+				1036AEA02BA06B6E00EF6779 /* URLSessionDataTask+Conformance.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		1036AEA22BA06B8E00EF6779 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				10C917732B95CD230071EE56 /* TrelloAuthenticator.swift */,
+				10C9179B2B962CD20071EE56 /* TrelloAPIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1036AEA32BA06C1F00EF6779 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				10C917482B95CC9F0071EE56 /* TrellTechApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1036D60C2BB17A7F0019FB5B /* Workspaces */ = {
+			isa = PBXGroup;
+			children = (
+				430B4B882BA89F8500F8F816 /* SearchBarView.swift */,
+				430B4B842BA89F5300F8F816 /* ProjectItemView.swift */,
+				10C917992B962B0A0071EE56 /* WorkspacesView.swift */,
+				1030425D2BA99ED600916F52 /* AddWorkspaceView.swift */,
+				1030425F2BA9BD9900916F52 /* EditWorkspaceView.swift */,
+			);
+			path = Workspaces;
+			sourceTree = "<group>";
+		};
+		1036D60D2BB17A8F0019FB5B /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				1036D6082BB17A050019FB5B /* AddBoardView.swift */,
+				1036D60A2BB17A220019FB5B /* EditBoardView.swift */,
+				10C917972B9626A10071EE56 /* BoardView.swift */,
+				10ACAB9F2BB2EF1F003B4793 /* InviteMemberView.swift */,
+			);
+			path = Boards;
+			sourceTree = "<group>";
+		};
+		1036D60E2BB18AB30019FB5B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				10C917892B9612640071EE56 /* SuccesView.swift */,
+				1052677D2BA9FAB100FAB64B /* LoginView.swift */,
+				430B4B862BA89F6600F8F816 /* CircularImageView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1036D60F2BB18AEB0019FB5B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				10ACAB972BB1D299003B4793 /* BoardDetailView.swift */,
+				10ACAB9D2BB2169E003B4793 /* AddListView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		10ACAB942BB1C699003B4793 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				1036D6152BB1AB8A0019FB5B /* AddCardView.swift */,
+				1036D6132BB1A1F90019FB5B /* EditCardView.swift */,
+				10ACABA12BB2F6D6003B4793 /* MemberSelectionView.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		10C9173C2B95CC9F0071EE56 = {
+			isa = PBXGroup;
+			children = (
+				10C917472B95CC9F0071EE56 /* TrellTech */,
+				10C917592B95CCA00071EE56 /* TrellTechTests */,
+				434409152BA895AA00F672B9 /* Utils */,
+				10C917632B95CCA00071EE56 /* TrellTechUITests */,
+				10C917462B95CC9F0071EE56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10C917462B95CC9F0071EE56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10C917452B95CC9F0071EE56 /* TrellTech.app */,
+				10C917562B95CCA00071EE56 /* TrellTechTests.xctest */,
+				10C917602B95CCA00071EE56 /* TrellTechUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10C917472B95CC9F0071EE56 /* TrellTech */ = {
+			isa = PBXGroup;
+			children = (
+				1036AEA32BA06C1F00EF6779 /* App */,
+				1036AEA22BA06B8E00EF6779 /* Networking */,
+				10C917802B960DB40071EE56 /* View */,
+				430B4B8C2BA8A05300F8F816 /* Utils */,
+				10C9177F2B960DAE0071EE56 /* Model */,
+				10C9174C2B95CCA00071EE56 /* Assets.xcassets */,
+				10C917752B95CEAA0071EE56 /* Info.plist */,
+				10C9174E2B95CCA00071EE56 /* TrellTech.entitlements */,
+				10C9174F2B95CCA00071EE56 /* Preview Content */,
+			);
+			path = TrellTech;
+			sourceTree = "<group>";
+		};
+		10C9174F2B95CCA00071EE56 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				10C917502B95CCA00071EE56 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10C917592B95CCA00071EE56 /* TrellTechTests */ = {
+			isa = PBXGroup;
+			children = (
+				1036AE992BA069A900EF6779 /* Mock */,
+				10C9175A2B95CCA00071EE56 /* TrellTechTests.swift */,
+			);
+			path = TrellTechTests;
+			sourceTree = "<group>";
+		};
+		10C917632B95CCA00071EE56 /* TrellTechUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10C917642B95CCA00071EE56 /* TrellTechUITests.swift */,
+				10C917662B95CCA00071EE56 /* TrellTechUITestsLaunchTests.swift */,
+			);
+			path = TrellTechUITests;
+			sourceTree = "<group>";
+		};
+		10C9177F2B960DAE0071EE56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10C917932B9625F10071EE56 /* Workspace.swift */,
+				10C917952B9626820071EE56 /* Board.swift */,
+				10C9179D2B973D890071EE56 /* List.swift */,
+				10C9179F2B973D9D0071EE56 /* Card.swift */,
+				10ACABA32BB2F74D003B4793 /* Member.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10C917802B960DB40071EE56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10ACAB942BB1C699003B4793 /* Card */,
+				1036D60F2BB18AEB0019FB5B /* List */,
+				1036D60E2BB18AB30019FB5B /* Home */,
+				1036D60D2BB17A8F0019FB5B /* Boards */,
+				1036D60C2BB17A7F0019FB5B /* Workspaces */,
+				10C9174A2B95CC9F0071EE56 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		430B4B8C2BA8A05300F8F816 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				430B4B8D2BA8A05300F8F816 /* Data.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		434409152BA895AA00F672B9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				434409162BA895AB00F672B9 /* Data.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10C917442B95CC9F0071EE56 /* TrellTech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10C9176A2B95CCA00071EE56 /* Build configuration list for PBXNativeTarget "TrellTech" */;
+			buildPhases = (
+				10C917412B95CC9F0071EE56 /* Sources */,
+				10C917422B95CC9F0071EE56 /* Frameworks */,
+				10C917432B95CC9F0071EE56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrellTech;
+			packageProductDependencies = (
+				10C917772B95D05C0071EE56 /* OAuthSwift */,
+				101850942B9F250D00F350DB /* KeychainSwift */,
+			);
+			productName = TrellTech;
+			productReference = 10C917452B95CC9F0071EE56 /* TrellTech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10C917552B95CCA00071EE56 /* TrellTechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10C9176D2B95CCA00071EE56 /* Build configuration list for PBXNativeTarget "TrellTechTests" */;
+			buildPhases = (
+				10C917522B95CCA00071EE56 /* Sources */,
+				10C917532B95CCA00071EE56 /* Frameworks */,
+				10C917542B95CCA00071EE56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10C917582B95CCA00071EE56 /* PBXTargetDependency */,
+			);
+			name = TrellTechTests;
+			productName = TrellTechTests;
+			productReference = 10C917562B95CCA00071EE56 /* TrellTechTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10C9175F2B95CCA00071EE56 /* TrellTechUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10C917702B95CCA00071EE56 /* Build configuration list for PBXNativeTarget "TrellTechUITests" */;
+			buildPhases = (
+				10C9175C2B95CCA00071EE56 /* Sources */,
+				10C9175D2B95CCA00071EE56 /* Frameworks */,
+				10C9175E2B95CCA00071EE56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10C917622B95CCA00071EE56 /* PBXTargetDependency */,
+			);
+			name = TrellTechUITests;
+			productName = TrellTechUITests;
+			productReference = 10C917602B95CCA00071EE56 /* TrellTechUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10C9173D2B95CC9F0071EE56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					10C917442B95CC9F0071EE56 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					10C917552B95CCA00071EE56 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 10C917442B95CC9F0071EE56;
+					};
+					10C9175F2B95CCA00071EE56 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 10C917442B95CC9F0071EE56;
+					};
+				};
+			};
+			buildConfigurationList = 10C917402B95CC9F0071EE56 /* Build configuration list for PBXProject "TrellTech" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10C9173C2B95CC9F0071EE56;
+			packageReferences = (
+				10C917762B95D05C0071EE56 /* XCRemoteSwiftPackageReference "OAuthSwift" */,
+				101850932B9F250D00F350DB /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
+			productRefGroup = 10C917462B95CC9F0071EE56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10C917442B95CC9F0071EE56 /* TrellTech */,
+				10C917552B95CCA00071EE56 /* TrellTechTests */,
+				10C9175F2B95CCA00071EE56 /* TrellTechUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10C917432B95CC9F0071EE56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C917512B95CCA00071EE56 /* Preview Assets.xcassets in Resources */,
+				10C9174D2B95CCA00071EE56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C917542B95CCA00071EE56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C9175E2B95CCA00071EE56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10C917412B95CC9F0071EE56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1036D6142BB1A1F90019FB5B /* EditCardView.swift in Sources */,
+				10C9174B2B95CC9F0071EE56 /* ContentView.swift in Sources */,
+				10C9179C2B962CD20071EE56 /* TrelloAPIManager.swift in Sources */,
+				10C9178A2B9612640071EE56 /* SuccesView.swift in Sources */,
+				10ACABA42BB2F74D003B4793 /* Member.swift in Sources */,
+				430B4B892BA89F8500F8F816 /* SearchBarView.swift in Sources */,
+				1030425E2BA99ED600916F52 /* AddWorkspaceView.swift in Sources */,
+				10C9179E2B973D890071EE56 /* List.swift in Sources */,
+				10C917982B9626A10071EE56 /* BoardView.swift in Sources */,
+				10ACABA02BB2EF1F003B4793 /* InviteMemberView.swift in Sources */,
+				10C917962B9626820071EE56 /* Board.swift in Sources */,
+				10C9179A2B962B0A0071EE56 /* WorkspacesView.swift in Sources */,
+				10C917942B9625F10071EE56 /* Workspace.swift in Sources */,
+				10C917742B95CD230071EE56 /* TrelloAuthenticator.swift in Sources */,
+				10ACABA22BB2F6D6003B4793 /* MemberSelectionView.swift in Sources */,
+				430B4B872BA89F6600F8F816 /* CircularImageView.swift in Sources */,
+				1036D6162BB1AB8A0019FB5B /* AddCardView.swift in Sources */,
+				10ACAB982BB1D299003B4793 /* BoardDetailView.swift in Sources */,
+				10C917492B95CC9F0071EE56 /* TrellTechApp.swift in Sources */,
+				430B4B8E2BA8A05300F8F816 /* Data.swift in Sources */,
+				430B4B852BA89F5300F8F816 /* ProjectItemView.swift in Sources */,
+				10C917A02B973D9D0071EE56 /* Card.swift in Sources */,
+				1052677E2BA9FAB100FAB64B /* LoginView.swift in Sources */,
+				1036D60B2BB17A220019FB5B /* EditBoardView.swift in Sources */,
+				103042602BA9BD9900916F52 /* EditWorkspaceView.swift in Sources */,
+				1036D6092BB17A050019FB5B /* AddBoardView.swift in Sources */,
+				10ACAB9E2BB2169E003B4793 /* AddListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C917522B95CCA00071EE56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1036AE9B2BA069D900EF6779 /* URLSessionMock.swift in Sources */,
+				1036AEA12BA06B6E00EF6779 /* URLSessionDataTask+Conformance.swift in Sources */,
+				1036AE9D2BA069F000EF6779 /* URLSessionDataTaskMock.swift in Sources */,
+				10C9175B2B95CCA00071EE56 /* TrellTechTests.swift in Sources */,
+				1036AE9F2BA06B2D00EF6779 /* URLSessionDataTaskProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C9175C2B95CCA00071EE56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C917672B95CCA00071EE56 /* TrellTechUITestsLaunchTests.swift in Sources */,
+				10C917652B95CCA00071EE56 /* TrellTechUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10C917582B95CCA00071EE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10C917442B95CC9F0071EE56 /* TrellTech */;
+			targetProxy = 10C917572B95CCA00071EE56 /* PBXContainerItemProxy */;
+		};
+		10C917622B95CCA00071EE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10C917442B95CC9F0071EE56 /* TrellTech */;
+			targetProxy = 10C917612B95CCA00071EE56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10C917682B95CCA00071EE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10C917692B95CCA00071EE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		10C9176B2B95CCA00071EE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TrellTech/TrellTech.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TrellTech/Preview Content\"";
+				DEVELOPMENT_TEAM = 93S3G4PP38;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrellTech/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = YHX.TrellTech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10C9176C2B95CCA00071EE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TrellTech/TrellTech.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TrellTech/Preview Content\"";
+				DEVELOPMENT_TEAM = 93S3G4PP38;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrellTech/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = YHX.TrellTech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10C9176E2B95CCA00071EE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = YHX.TrellTechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrellTech.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrellTech";
+			};
+			name = Debug;
+		};
+		10C9176F2B95CCA00071EE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = YHX.TrellTechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrellTech.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrellTech";
+			};
+			name = Release;
+		};
+		10C917712B95CCA00071EE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = YHX.TrellTechUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrellTech;
+			};
+			name = Debug;
+		};
+		10C917722B95CCA00071EE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = YHX.TrellTechUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrellTech;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10C917402B95CC9F0071EE56 /* Build configuration list for PBXProject "TrellTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C917682B95CCA00071EE56 /* Debug */,
+				10C917692B95CCA00071EE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10C9176A2B95CCA00071EE56 /* Build configuration list for PBXNativeTarget "TrellTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C9176B2B95CCA00071EE56 /* Debug */,
+				10C9176C2B95CCA00071EE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10C9176D2B95CCA00071EE56 /* Build configuration list for PBXNativeTarget "TrellTechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C9176E2B95CCA00071EE56 /* Debug */,
+				10C9176F2B95CCA00071EE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10C917702B95CCA00071EE56 /* Build configuration list for PBXNativeTarget "TrellTechUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C917712B95CCA00071EE56 /* Debug */,
+				10C917722B95CCA00071EE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		101850932B9F250D00F350DB /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 21.0.0;
+			};
+		};
+		10C917762B95D05C0071EE56 /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		101850942B9F250D00F350DB /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 101850932B9F250D00F350DB /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		10C917772B95D05C0071EE56 /* OAuthSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10C917762B95D05C0071EE56 /* XCRemoteSwiftPackageReference "OAuthSwift" */;
+			productName = OAuthSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 10C9173D2B95CC9F0071EE56 /* Project object */;
+}
